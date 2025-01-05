@@ -17,9 +17,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
+    <!-- Android Chrome 192x192 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="<%= image_path("android-chrome-192x192.png") %>">
+
+    <!-- Android Chrome 512x512 -->
+    <link rel="icon" type="image/png" sizes="512x512" href="<%= image_path("android-chrome-512x512.png") %>">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= image_path("apple-touch-icon.png") %>">
+
+    <!-- Favicon 16x16 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= image_path("favicon-16x16.png") %>">
+
+    <!-- Favicon 32x32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= image_path("favicon-32x32.png") %>">
+
+    <!-- Legacy favicon -->
+    <link rel="shortcut icon" href="<%= image_path("favicon.ico") %>">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
