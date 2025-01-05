@@ -8,3 +8,158 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Container */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures the logo is on top of everything */
+}
+
+.center-logo {
+    max-width: 200px; /* Adjust size as needed */
+    border: 5px solid white;
+    border-radius: 50%; /* Makes the border rounded */
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    margin-top: 5%;
+    padding: 30px 50px 50px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffcc00;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+.cta-button {
+    padding: 20px 40px;
+    background-color: #ffcc00;
+    color: #111;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+}
+/* About Section */
+.about-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
