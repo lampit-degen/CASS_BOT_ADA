@@ -1,21 +1,23 @@
 <header class="hero">
- <div class="logo-container">
-    <img src="<%= image_path('logo.jpeg') %>" alt="Cassandra of Troy" class="center-logo">
-    <div class="hero-content">
-        <h1>Cassandra of Troy</h1>
-        <p>The voice of truth, lost to the winds of fate.</p>
-        <div class="button-container">
-          <%= link_to 'Scanner', scan_path, class: 'button' %>
-            <a href="https://x.com" target="_blank" class="button">X.com</a>
-            <a href="https://snek.fun" target="_blank" class="button">Snek.fun</a>
+    <div class="overlay"></div>
+    <img src="<%= image_path('bg.png') %>" alt="Cassandra of Troy" class="hero-image">
+     <div class="logo-container">
+        <img src="<%= image_path('logo.jpeg') %>" alt="Cassandra of Troy" class="center-logo">
+        <div class="hero-content">
+            <h1>Cassandra of Troy</h1>
+            <p>The voice of truth, lost to the winds of fate.</p>
+            <div class="button-container">
+                <a href="#about" class="button">Learn More</a>
+                <a href="https://x.com" target="_blank" class="button">Visit X.com</a>
+                <a href="https://snek.fun" target="_blank" class="button">Visit Snek.fun</a>
+            </div>
         </div>
-    </div>
-  </div>
+      </div>
 </header>
 
 <main>
   <section id="about-cassandra" class="about-section">
-    <div class="container hero-content">
+    <div class="container">
         <h2>About Cassandra</h2>
         <p>
             <strong>Cassandra of Troy</strong> is a tragic figure from Greek mythology, known for her beauty, intelligence, and her cursed gift of prophecy. Here is her story:
@@ -49,6 +51,13 @@
         </p>
         <p>
             Both Cassandra and Agamemnon were killed shortly afterward, fulfilling her tragic prophecy.
+        </p>
+        <h3>Cassandra as a Symbol</h3>
+        <p>
+            Cassandra is often seen as a symbol of unheeded truth and the pain of being disbelieved. Her story has resonated through the centuries as a cautionary tale about ignoring wisdom and foresight.
+        </p>
+        <p>
+            In modern contexts, “Cassandra” is sometimes used to describe someone who warns of danger but is ignored until it’s too late.
         </p>
     </div>
   </section>

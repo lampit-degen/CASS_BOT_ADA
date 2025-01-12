@@ -40,7 +40,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body style="background-image: url('<%= image_path('bg-1.jpg') %>');">
+    <div class="overlay"></div>
     <%= yield %>
 
     <footer class="footer">

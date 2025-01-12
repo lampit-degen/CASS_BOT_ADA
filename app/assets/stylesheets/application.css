@@ -17,8 +17,23 @@
 
 body {
     font-family: 'Quicksand', 'Comic Sans MS', 'Comic Sans', cursive;
-    color: #333;
+    color: white;
     line-height: 1.6;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    margin: 0; /* Removes default margins */
+    padding: 20px; /* Removes default padding */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -29,7 +44,8 @@ a {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
+    width: 880px;
+    margin: 0 auto;
 }
 
 .hero-image {
@@ -38,22 +54,8 @@ a {
     object-fit: cover;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Logo Container */
-.logo-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensures the logo is on top of everything */
+main {
+  position: relative;
 }
 
 .center-logo {
@@ -71,7 +73,7 @@ a {
     padding: 30px 50px 50px;
 }
 
-.hero-content h1 {
+h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -122,34 +124,75 @@ a {
     background-color: #e6b800;
 }
 /* About Section */
+/* About Section Styling */
 .about-section {
-    padding: 2rem 1rem;
+    padding: 60px 20px;
     text-align: center;
-    background-color: #f8f8f8;
+    position: relative;
 }
 
-.about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
 }
 
 .about-section p {
     font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
+.about-section ul {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 20px;
+    max-width: 800px;
+}
+
+.about-section ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 0.9rem;
+    }
+}
 /* Footer */
 .footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
-    color: white;
     font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
     .hero-content h1 {
         font-size: 2.5rem;
     }
